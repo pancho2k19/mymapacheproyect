@@ -2,12 +2,12 @@
 
 {% block content %}
   <hl>Listado de piezas</hl>
-  {% if Pieza_list %}
+  {% if pieza_list %}
 
   <ul>
-    {% for Pieza in Pieza_list %}
+    {% for Pieza in pieza_list %}
     <li>
-       <a href="{{Pieza.get_absolute_url}}">{{Pieza.id}}</a> ({{Pieza.id_autor}})
+       <a href="{{Pieza.get_absolute_url}}">{{Pieza.id}}</a> ({{Pieza.descripcion}})
     </li>
     {% endfor %}
   </ul>

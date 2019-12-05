@@ -4,7 +4,7 @@
 
 <head>
 
-  {% block tittle %}<tittle>Local Library</tittle>{% endblock %}
+  {% block tittle %}<tittle>Catalogo</tittle>{% endblock %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=devide-width, initial-scale=1">
 
@@ -30,10 +30,8 @@
       {% block sidebar %}
       <ul class="sidebar-nav">
           <li><a href="{% url 'index' %}">Home</a </li>
-          <li><a href="{% url 'Pieza' %}">All Pieza</a </li>
-          <li><a href="">All Usuario</a </li>
-          <li><a href="">All Pieza</a </li>
-          <li><a href="">All Autor</a </li>
+          <li><a href="{% url 'pieza' %}">Registro de piezas</a </li>
+
 
       </ul>
       {% endblock %}
