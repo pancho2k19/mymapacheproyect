@@ -59,6 +59,8 @@ class Region(models.Model):
 class Pieza(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text="ID único para la pieza")
+    nombre = models.CharField(max_length=50)
+    stock = precio = models.IntegerField(  )
     id_autor = models.ForeignKey('Autor', on_delete=models.SET_NULL, null=True)
     precio = models.IntegerField(  )
     imagen = models.ImageField(upload_to = 'images/%Y/%m/%d')
